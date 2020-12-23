@@ -3,16 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { DepartmentRoutingModule } from './department-routing.module';
 import { DepartmentComponent } from './department.component';
-import { MatExpansionModule } from '@angular/material/expansion';
-import { MatFormFieldModule } from '@angular/material/form-field';
+
+import { DefinedMaterialModule } from '../material-module';
 
 @NgModule({
   declarations: [DepartmentComponent],
   imports: [
     CommonModule,
-    MatExpansionModule,
-    MatFormFieldModule,
-    DepartmentRoutingModule
+    DepartmentRoutingModule,
+    DefinedMaterialModule
   ]
 })
 export class DepartmentModule { }
